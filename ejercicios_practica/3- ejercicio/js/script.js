@@ -15,3 +15,12 @@ Cuando un botón es presionado, se debe agregar la clase
 "fuego" al botón (deberá cambiar de color)
 
 */
+ const btns = document.querySelectorAll("button")
+ console.log(btns)
+
+
+btns.forEach(button => {
+   button.addEventListener("click", () => {
+      button.classList.toggle("fuego");
+   });
+})
